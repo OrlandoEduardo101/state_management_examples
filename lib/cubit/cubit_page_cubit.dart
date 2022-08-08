@@ -13,7 +13,7 @@ class CubitPageCubit extends Cubit<ICounterState> {
     emit(CounterState(value: value + 1));
 
     if ((state as CounterState).value == 5) {
-      emit(CounterError(value: (state as CounterState).value));
+      emit(CounterError('count == 5',value: (state as CounterState).value));
     }
   }
 }

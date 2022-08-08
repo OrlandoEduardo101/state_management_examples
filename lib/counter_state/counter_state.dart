@@ -23,6 +23,7 @@ class CounterLoading implements ICounterState {}
 
 class CounterError implements ICounterState {
   final int value;
+  final String message;
 
-  CounterError({this.value = 0});
+  CounterError(this.message, {this.value = 0});
 }

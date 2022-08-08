@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:state_management_examples/triple/triple_page.dart';
+import 'package:state_management_examples/value_notifier/value_notifier_page.dart';
 
 import 'bloc/bloc_page.dart';
 import 'change_notifier/change_notifier_page.dart';
@@ -44,9 +45,7 @@ class MenuList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+    return ListView( 
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -70,6 +69,18 @@ class MenuList extends StatelessWidget {
                       );
                     },
                     child: const Text('ChangeNotifier Page'),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => const ValueNotifierPage()),
+                      );
+                    },
+                    child: const Text('ValueNotifier Page'),
                   ),
                 ),
                 Padding(

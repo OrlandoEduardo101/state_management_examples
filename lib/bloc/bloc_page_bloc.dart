@@ -13,10 +13,9 @@ class BlocPageBloc extends Bloc<IBlocEvent, ICounterState> {
     await Future.delayed(const Duration(milliseconds: 500));
 
     emit(CounterState(value: event.value + 1));
-    
-    if ((state as CounterState).value == 5) {
-      emit(CounterError(value: (state as CounterState).value));
-    }
 
+    if ((state as CounterState).value == 5) {
+      emit(CounterError('count == 5', value: (state as CounterState).value));
+    }
   }
 }

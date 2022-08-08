@@ -12,7 +12,7 @@ class TriplePageStore extends StreamStore<CounterError, CounterState> {
     update(CounterState(value: state.value + 1));
 
     if (state.value == 5) {
-      setError(CounterError(value: state.value));
+      setError(CounterError('count == 5', value: state.value));
     }
     setLoading(false);
   }
