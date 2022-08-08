@@ -13,7 +13,7 @@ class ValueNotifierStore extends ValueNotifier<ICounterState> {
       value = CounterState(value: localCount.value + 1);
 
       if ((value as CounterState).value == 5) {
-        value = CounterError('count == 5', value: localCount.value);
+        value = CounterError('error: count == 5', value: localCount.value);
       }
     }
 

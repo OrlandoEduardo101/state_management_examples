@@ -63,17 +63,30 @@ class ScreenLifecyleState extends State<ScreenLifecyle> with WidgetsBindingObser
           return const Directionality(
             textDirection: TextDirection.ltr,
             child: Center(
-              child: Text('This widget has not observed any lifecycle changes.', textAlign: TextAlign.center,),
+              child: Text(
+                'This widget has not observed any lifecycle changes.',
+                textAlign: TextAlign.center,
+              ),
             ),
           );
         }
         return Directionality(
           textDirection: TextDirection.ltr,
           child: Center(
-            child: Text('The most recent lifecycle state this widget observed was: $_lastLifecycleState.', textAlign: TextAlign.center,),
+            child: Text(
+              'The most recent lifecycle state this widget observed was: $_lastLifecycleState.',
+              textAlign: TextAlign.center,
+            ),
           ),
         );
       }),
+      floatingActionButton: FloatingActionButton(
+          child: const Icon(Icons.add),
+          onPressed: () {
+            setState(() {
+              log('click');
+            });
+          }),
     );
   }
 
@@ -146,6 +159,3 @@ class ScreenLifecyleState extends State<ScreenLifecyle> with WidgetsBindingObser
     }
   }
 }
-
-
-
