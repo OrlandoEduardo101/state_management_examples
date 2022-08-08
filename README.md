@@ -1,4 +1,5 @@
-# PPT: https://docs.google.com/presentation/d/1V9ej-rx5-buG3J67fCtjffaPqSk09ntSrXaiPwhzj1c/edit?usp=sharing
+# PPT Gerenciamento de Estados: https://docs.google.com/presentation/d/1V9ej-rx5-buG3J67fCtjffaPqSk09ntSrXaiPwhzj1c/edit?usp=sharing
+# PPT Conceitos do Flutter: https://docs.google.com/presentation/d/14AMJY_HRArfAaQHW4NzkBE59tKvuOwSaoAZU9FmjAwA/edit?usp=sharing
 
 # state_management_examples
 
