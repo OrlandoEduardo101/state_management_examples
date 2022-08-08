@@ -4,6 +4,7 @@ import 'package:state_management_examples/triple/triple_page.dart';
 import 'bloc/bloc_page.dart';
 import 'change_notifier/change_notifier_page.dart';
 import 'cubit/cubit_page.dart';
+import 'lifecycle/screen_life_cycle.dart';
 import 'mobx/mobx_page.dart';
 import 'redux/redux_page.dart';
 import 'redux_no_package/redux_no_package_page.dart';
@@ -153,6 +154,18 @@ class MenuList extends StatelessWidget {
                       );
                     },
                     child: const Text('Segmented State Pattern (Triple) Page'),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                            builder: (context) => const ScreenLifecyle()),
+                      );
+                    },
+                    child: const Text('LifeCycle Page'),
                   ),
                 )
               ],
