@@ -39,7 +39,7 @@ dependencies:
   flutter_bloc: ^8.0.1
   mobx: ^2.0.6+1
   flutter_mobx: ^2.0.4
-  flutter_triple: ^1.2.7+2
+  flutter_triple: ^2.0.0
 
 dev_dependencies:
   flutter_test:

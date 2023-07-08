@@ -29,7 +29,7 @@ class _TriplePageState extends State<TriplePage> {
             const Text(
               'You have pushed the button this many times:',
             ),
-            ScopedBuilder<TriplePageStore, CounterError, CounterState>(
+            ScopedBuilder<TriplePageStore, CounterState>(
               store: controller,
               onLoading: (context) => const Center(child: CircularProgressIndicator(),),
               onError: (context, state) => const Center(

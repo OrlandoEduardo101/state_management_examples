@@ -1,7 +1,7 @@
 import 'package:flutter_triple/flutter_triple.dart';
 import 'package:state_management_examples/counter_state/counter_state.dart';
 
-class TriplePageStore extends StreamStore<CounterError, CounterState> {
+class TriplePageStore extends Store<CounterState> {
   TriplePageStore() : super(CounterState());
 
   Future<void> increment() async {
